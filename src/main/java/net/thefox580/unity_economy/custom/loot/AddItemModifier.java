@@ -17,8 +17,8 @@ import java.util.function.Supplier;
 
 public class AddItemModifier extends LootModifier {
     public static final Supplier<Codec<AddItemModifier>> CODEC = Suppliers.memoize(()
-    -> RecordCodecBuilder.create(inst -> codecStart(inst).and(ForgeRegistries.ITEMS.getCodec()
-    .fieldOf("item").forGetter(m -> m.item)).apply(inst, AddItemModifier::new)));
+            -> RecordCodecBuilder.create(inst -> codecStart(inst).and(ForgeRegistries.ITEMS.getCodec()
+            .fieldOf("item").forGetter(m -> m.item)).apply(inst, AddItemModifier::new)));
     private final Item item;
 
     public AddItemModifier(LootItemCondition[] conditionsIn, Item item) {
@@ -28,8 +28,8 @@ public class AddItemModifier extends LootModifier {
 
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
-        for(LootItemCondition condition : this.conditions){
-            if(!condition.test(context)){
+        for(LootItemCondition condition : this.conditions) {
+            if(!condition.test(context)) {
                 return generatedLoot;
             }
         }
