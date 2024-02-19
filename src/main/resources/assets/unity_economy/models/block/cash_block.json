@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "up": "unity_economy:block/cash_block_top",
+    "down": "unity_economy:block/cash_block_top",
+    "north": "unity_economy:block/cash_block_north",
+    "south": "unity_economy:block/cash_block_south",
+    "east": "unity_economy:block/cash_block_east",
+    "west": "unity_economy:block/cash_block_west",
+    "particle": "unity_economy:block/cash_block_top"
+  }
+}

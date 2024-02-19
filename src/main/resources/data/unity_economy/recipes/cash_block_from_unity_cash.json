@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "CCC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "unity_economy:unity_cash"
+    }
+  },
+  "result": {
+    "item": "unity_economy:cash_block"
+  }
+}

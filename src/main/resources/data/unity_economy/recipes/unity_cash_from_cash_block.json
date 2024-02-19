@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "unity_economy:cash_block"
+    }
+  ],
+  "result": {
+    "item": "unity_economy:unity_cash",
+    "count": 9
+  }
+}

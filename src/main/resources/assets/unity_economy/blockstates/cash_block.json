@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model" : "unity_economy:block/cash_block"
+    }
+  }
+}
